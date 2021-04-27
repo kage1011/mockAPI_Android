@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "TestFinalTest_Chair_RecycleLayout"

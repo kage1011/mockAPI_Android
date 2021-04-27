@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5E5"
+    tools:context=".Activity_Details">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <ImageView
+        android:id="@+id/imgDetails"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FDFDFD"
+        app:layout_constraintBottom_toTopOf="@+id/guideline3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/images_2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dp"
+        android:text="Product Details"
+        android:textColor="#050303"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgBtnMinus"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtnMinus" />
+
+    <TextView
+        android:id="@+id/tvQualityDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:text="1"
+        android:textColor="#050303"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBtnMinus"
+        app:layout_constraintEnd_toStartOf="@+id/imgBtnAdd"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnMinus"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnMinus" />
+
+    <TextView
+        android:id="@+id/tvNameDetails"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="11dp"
+        android:text="Nice Armchair"
+        android:textColor="#050303"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/tvPriceDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3" />
+
+    <TextView
+        android:id="@+id/tvDetailsDetails"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="ONE OF A KIND YACHT  INTERIOR IS MADE TO FIT YOUR BOAT TO MAKE IT AS COMFORTABLE AS YOUR HOUSE   "
+        android:textColor="#050303"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddCartDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/tvPriceDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="$250"
+        android:textColor="#050303"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvNameDetails" />
+
+    <ImageButton
+        android:id="@+id/imgBtnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:layout_marginLeft="46dp"
+        android:background="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/imgBtnMinus"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnMinus"
+        app:layout_constraintTop_toTopOf="@+id/imgBtnMinus"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/group_7" />
+
+    <ImageButton
+        android:id="@+id/imgBtnMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="27dp"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="@+id/tvNameDetails"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameDetails"
+        app:srcCompat="@drawable/ant_design_minus_circle_outlined" />
+
+    <Button
+        android:id="@+id/btnAddCartDetails"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:text="Add to Cart"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        app:backgroundTint="#F66512"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
